@@ -2,7 +2,7 @@
 
 package game.comp
 
-class TileSnake(override val value: Int, val newtarget:Tile) extends Tile (value){
+class TileSnake(override val newValue: Int, val newtarget:Tile) extends Tile (newValue){
 this.target=newtarget
 
 
@@ -12,4 +12,4 @@ override def toString():String={
   return  (String.format("%3d - %-3d", resVal,resTarget))
 }
   
-}
+} 
