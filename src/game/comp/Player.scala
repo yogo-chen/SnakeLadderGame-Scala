@@ -3,7 +3,7 @@
 package game.comp
 
 class Player(val newname:String) {
-  protected var name  : String=""
+  protected var name  : String = newname
   protected var position :Tile
   
   def setPosition(tile:Tile):Unit ={
