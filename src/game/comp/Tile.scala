@@ -1,6 +1,6 @@
 package game.comp
 
-abstract class Tile(newValue:Int) {
+abstract class Tile(val newValue:Int) {
 protected  var  value : Int = newValue
   protected var target : Tile = this
 
