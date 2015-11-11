@@ -2,7 +2,7 @@
 
 package game.comp
 
-class TileLadder(override val valueNilai: Int, newtarget:Tile) extends Tile(valueNilai ){
+class TileLadder(override val newValue: Int, newtarget:Tile) extends Tile(newValue ){
     this.target  = newtarget
  
 
