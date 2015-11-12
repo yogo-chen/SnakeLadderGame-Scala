@@ -2,7 +2,7 @@
 
 package game.comp
 
-import java.util.Random
+import scala.util.Random
 class Dice {
   
   private var r : Random = new Random()
