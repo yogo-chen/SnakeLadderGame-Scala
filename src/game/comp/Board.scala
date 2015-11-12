@@ -1,7 +1,7 @@
 
 
 package game.comp
-import java.util.Random
+import scala.util.Random
 
 class Board {
   
