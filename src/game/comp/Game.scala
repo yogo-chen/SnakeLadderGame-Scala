@@ -18,9 +18,8 @@ class Game(val newp1:String, val newp2:String) {
     return this.gameOver
   }
   
-  def Game(p1 : String) {
-    var p1 : Player = new Player(newp1)
-    var p2 : Player = new Player("Bot")
+  def this(newp1 : String) {
+    this(newp1, "Bot")
     var board : Board = new Board()
     var dice : Dice = new Dice()
     var versusComputer : Boolean = true
