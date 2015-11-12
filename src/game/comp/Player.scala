@@ -4,7 +4,7 @@ package game.comp
 
 class Player(val newname:String) {
   protected var name  : String = newname
-  protected var position :Tile
+  protected var position :Tile=_
   
   def setPosition(tile:Tile):Unit ={
     this.position=tile
