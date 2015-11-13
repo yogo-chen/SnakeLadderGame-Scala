@@ -32,7 +32,8 @@ class Board {
    private  def  generateSnakeTiles(r : Random, snake:Int):Unit={
     var initial:Int=0
     var target:Int=0
-    while(snake==0){
+    //while(snake==0){
+    for(i<-snake to 0 by -1 ){
        do {
          
          initial = r.nextInt(79)+20
@@ -47,10 +48,10 @@ class Board {
    private  def generateLadderTiles(r:Random, ladder:Int ):Unit={
      var initial:Int=0
      var target:Int=0
-     while(ladder==0){
-       do{
+     for(i<-ladder to 0 by -1 ){
+        do{
          initial = r.nextInt(79)+1
-       }while (!(this.tiles(initial).isInstanceOf[TileNormal]))
+        }while (!(this.tiles(initial).isInstanceOf[TileNormal]))
        do{
          target = r.nextInt(99-initial)+initial
        }while(!(this.tiles(target).isInstanceOf[TileNormal]))
