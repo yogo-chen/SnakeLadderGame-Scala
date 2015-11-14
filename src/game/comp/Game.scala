@@ -14,6 +14,9 @@ class Game(val newp1:String, val newp2:String) {
   private var lastRoll : Int = _
   private var curPlayer : Player = _
 
+  /**
+   * method untuk memeriksa apakah permainan telah berakhir
+   */
   def isGameOver() : Boolean = {
     return this.gameOver
   }
@@ -33,6 +36,9 @@ class Game(val newp1:String, val newp2:String) {
     printBoardString()
   }
  
+  /**
+   * method yang menjalankan permainan ular tangga
+   */
   def play() : Unit = {
     lastRoll = dice roll()
     var position : Int = curPlayer.getPosition() + lastRoll
@@ -41,6 +47,10 @@ class Game(val newp1:String, val newp2:String) {
     end()
   }
   
+   /**
+   * return true jika salah satu pemain mencapai angka 100
+   * permainan selesai
+   */
   private def end() : Unit = {
     if (this.curPlayer.getPosition() == 100) {
       this.gameOver = true
@@ -55,12 +65,18 @@ class Game(val newp1:String, val newp2:String) {
       }
     }
   }
-
+  
+  /**
+   * mengeluarkan output nama pemenang
+   */
   private def printWinner() : Unit = {
         System.out.println("CONGRATULATION!!!")
         System.out.println(this.curPlayer + " is the winner!")
     }
 
+   /**
+   * mencetak papan permainan ular tangga
+   */
   def printBoardString() : Unit = {
         var tiles : Array[Tile] = this.board.getBoard()
         var r : String = new String()
