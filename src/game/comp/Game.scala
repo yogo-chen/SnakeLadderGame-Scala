@@ -1,4 +1,5 @@
 package game.comp
+
 class Game(val newp1 : String, val newp2 : String) {
 
 	private var p1 : Player = new Player(newp1)
@@ -10,11 +11,11 @@ class Game(val newp1 : String, val newp2 : String) {
 
 	private var lastRoll : Int = _
 	private var curPlayer : Player = _
-	
+
 	/**
-   * method untuk memeriksa apakah permainan telah berakhir
-   */
-  def isGameOver() : Boolean = {
+	 * method untuk memeriksa apakah permainan telah berakhir
+	 */
+	def isGameOver() : Boolean = {
 		return this.gameOver
 	}
 
@@ -32,22 +33,18 @@ class Game(val newp1 : String, val newp2 : String) {
 		curPlayer = p1
 		printBoardString()
 	}
-	
-  /**
-   * method yang menjalankan permainan ular tangga
-   */
-  def play() : Unit = {
+
+	/**
+	 * method yang menjalankan permainan ular tangga
+	 */
+	def play() : Unit = {
 		lastRoll = dice roll()
 		var position : Int = curPlayer.getPosition() + lastRoll
 		this.curPlayer.setPosition(board.getTile(nextPosition(position)))
 		printBoardString()
 		end()
 	}
-  
-   /**
-   * return true jika salah satu pemain mencapai angka 100
-   * permainan selesai
-   */
+
 	private def end() : Unit = {
 		if (this.curPlayer.getPosition() == 100) {
 			this.gameOver = true
@@ -62,18 +59,15 @@ class Game(val newp1 : String, val newp2 : String) {
 			}
 		}
 	}
-	
-  /**
-   * mengeluarkan output nama pemenang
-   */
+
 	private def printWinner() : Unit = {
 		System.out.println("CONGRATULATION!!!")
 		System.out.println(this.curPlayer + " is the winner!")
 	}
-	
-   /**
-   * mencetak papan permainan ular tangga
-   */
+
+	/**		
+	 * mencetak papan permainan ular tangga		
+	 */
 	def printBoardString() : Unit = {
 		var tiles : Array[Tile] = this.board.getBoard()
 		var r : String = new String()
@@ -98,7 +92,7 @@ class Game(val newp1 : String, val newp2 : String) {
 		r += p2 + "'s position : " + p2.getPosition()
 		System.out.println(r)
 	}
-	
+
 	private def nextPosition(value : Int) : Int = {
 		var varVal : Int = value
 		if (isOverlap(varVal)) {
