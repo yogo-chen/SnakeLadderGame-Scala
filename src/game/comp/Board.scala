@@ -1,15 +1,26 @@
 package game.comp
 
 import scala.util.Random
-
+/**
+ * Kelas Board yang merepresentaasikan papan dalam permainan SnakeLadder
+ * merupakan bagian dari kelas model
+ * */
 class Board {
-	var tiles : Array[Tile] = new Array[Tile](100)
+	var tiles : Array[Tile] = new Array[Tile](100)// kotak dalam 1 papan, terdiri dari 100 kotak
 	generateTiles(10,10)
 
+	/**
+	 * method untuk mendapatkan tile pada suatu posisi
+	 * return tile pada posisi tertentu
+	 * */
 	def getTile(value : Int) : Tile = {
 		return this.tiles(value-1)
 	}
 
+	/**
+	 * method untuk mendapatkan papan
+	 * return papan 
+	 * */
 	def getBoard() : Array[Tile] = {
 		return this.tiles
 	}
