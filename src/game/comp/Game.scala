@@ -1,5 +1,13 @@
 package game.comp
 
+/**
+ * Kelas Game yang merepresentasikan permainan Ular Tangga
+ * Merupakan bagian dari kelas Model
+ * */
+ 
+ /**
+  * Constructor pertama kelas Game, parameter 2 string untuk pemain pertama dan kedua
+  * */
 class Game(val newp1 : String, val newp2 : String) {
 
 	private var p1 : Player = new Player(newp1)
@@ -14,11 +22,16 @@ class Game(val newp1 : String, val newp2 : String) {
 
 	/**
 	 * method untuk memeriksa apakah permainan telah berakhir
+	 * return true jika permainan berakhir, false sebaliknya
 	 */
 	def isGameOver() : Boolean = {
 		return this.gameOver
 	}
 
+	/**
+	 *Constructor kedua dari Kelas Game, yang merepresentasikan permainan melawan komputer
+	 * param 1 string merupakan nama pemain manusia
+	 * */
 	def this(newp1 : String) {
 		this(newp1, "Bot")
 		var board : Board = new Board()
@@ -27,6 +40,9 @@ class Game(val newp1 : String, val newp2 : String) {
 		var gameOver : Boolean = false
 	}
 
+	/**
+	 * Method yang menunjukkan permainan dimulai, seluruh pemain diset menjadi berada di posisi pertama
+	 * */
 	def start() : Unit = {
 		p1.setPosition(board.getTile(1))
 		p2.setPosition(board.getTile(1))
