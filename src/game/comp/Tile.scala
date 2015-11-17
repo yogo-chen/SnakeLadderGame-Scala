@@ -12,5 +12,9 @@ abstract class Tile(val newValue : Int) {
 		return this.target.getValue()
 	}
 
-	override def toString() : String
+	override def toString() : String = {
+		val resVal : Object = this.value.asInstanceOf[Object]
+		val resTarget : Object = this.target.getValue().asInstanceOf[Object]
+		return (String.format("%3d - %-3d", resVal, resTarget))
+	}
 }
