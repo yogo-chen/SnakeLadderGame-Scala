@@ -15,6 +15,10 @@ abstract class Tile(val newValue : Int) {
 	override def toString() : String = {
 		val resVal : Object = this.value.asInstanceOf[Object]
 		val resTarget : Object = this.target.getValue().asInstanceOf[Object]
-		return (String.format("%3d - %-3d", resVal, resTarget))
+		if(this.target == this){
+			return (String.format("%3d-   ", resVall))
+		} else {
+			return (String.format("%3d-%-3d", resVal, resTarget))
+		}
 	}
 }
