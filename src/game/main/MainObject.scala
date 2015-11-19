@@ -2,11 +2,10 @@
 
 package game.view
 
-import engine.Game
+import game.comp.Game
 import java.util.Arrays
 import java.util.LinkedList
 import java.util.Scanner
-import java.lang.Boolean
 import scala.util.control.Breaks._
 
 object Main {
@@ -48,7 +47,7 @@ object Main {
         }
   }
 
-  def checkOption(pilihan:String): Boolean ={
+  def checkOption(pilihan:String): Boolean = {
         var res = true 
         var value = 0
         try {
