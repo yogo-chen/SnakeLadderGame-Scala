@@ -65,6 +65,7 @@ class Board {
   
   /**
    * method yang men-Generate Snake Tile
+   * * @param snake jumlah ular yang digenerate
    */
   private def generateSnakeTiles(r: Random, snake: Int) {
     var initial: Int = 0
@@ -82,6 +83,7 @@ class Board {
   
   /**
    * method yang men-Generate Ladder Tile
+   * @param ladder jumlah tangga yang digenerate
    */
   private def generateLadderTiles(r: Random, ladder: Int) {
     var initial: Int = 0
