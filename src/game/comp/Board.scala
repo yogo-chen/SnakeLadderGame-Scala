@@ -12,12 +12,16 @@ class Board {
 
   /**
    * method untuk mendapatkan tile pada suatu posisi
-   * return tile pada posisi tertentu
+   * @return tile pada posisi tertentu
    */
   def getTile(value: Int): Tile = {
     return this.tiles(value - 1)
   }
 
+  /**
+   * method yang meng-Override method toString
+   * @return board dalam bentuk text mode
+   */
   override def toString(): String = {
     var r = new String()
     for (i <- 0 until 10) {
@@ -37,20 +41,31 @@ class Board {
     }
     r
   }
-
+  
+  /**
+   * method yang memanggil method Generate Normal Tile, Ladder Tile, dan Snake Tile
+   * @param snake jumlah ular dalam board
+   * @param ladder jumlah tangga dalam board
+   */
   private def generateTiles(snake: Int, ladder: Int) {
     var r: Random = new Random()
     generateNormalTiles()
     generateSnakeTiles(r, snake)
     generateLadderTiles(r, ladder)
   }
-
+  
+  /**
+   * method yang men-Generate Normal Tile
+   */
   private def generateNormalTiles() {
     for (i <- this.tiles.length - 1 to 0 by -1) {
       this.tiles(i) = new TileNormal(i + 1)
     }
   }
-
+  
+  /**
+   * method yang men-Generate Snake Tile
+   */
   private def generateSnakeTiles(r: Random, snake: Int) {
     var initial: Int = 0
     var target: Int = 0
@@ -64,7 +79,10 @@ class Board {
       this.tiles(initial) = new TileSnake(initial + 1, this.tiles(target))
     }
   }
-
+  
+  /**
+   * method yang men-Generate Ladder Tile
+   */
   private def generateLadderTiles(r: Random, ladder: Int) {
     var initial: Int = 0
     var target: Int = 0
