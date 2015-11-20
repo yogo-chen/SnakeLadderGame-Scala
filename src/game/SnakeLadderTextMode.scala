@@ -3,6 +3,10 @@ package game
 import game.comp._
 import java.util.Scanner
 
+
+/*
+ * Kelas yang merepresentasikan view yang akan diterima oleh pengguna game Snake and Ladder
+ **/
  
 class SnakeLadderTextMode {
 
