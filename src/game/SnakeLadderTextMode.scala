@@ -3,8 +3,13 @@ package game
 import game.comp._
 import java.util.Scanner
 
+ 
 class SnakeLadderTextMode {
 
+
+/**
+ * Method start untuk memulai permainan, dan memberikan option tipe pemain (bot atau pemain), dan memulai permainan 
+ **/
   def start() {
     val in = new Scanner(System.in)
     var input = new String()
@@ -43,6 +48,7 @@ class SnakeLadderTextMode {
       game.play()
     }
   }
+
 
   private def checkOption(pilihan: String): Boolean = {
     var res = true
