@@ -1,18 +1,44 @@
-# Snakes and Ladders Game
-This project contain snakes and ladders game's **Scala** API library
+# Snake and Ladder Game
+This project contain snake and ladder game on **[Scala](http://www.scala-lang.org/)** language
 
-For **Java**'s API you can visit - [yogo-chen/SnakeLadderGame-Java](https://github.com/yogo-chen/SnakeLadderGame-Java)
+<img src="http://codecondo.com/wp-content/uploads/2014/03/4-Minimal-Scala-Web-Frameworks-for-Web-Developers.gif" alt="Scala-Logo" height="200"/>
 
-## Credits
+- For **Java** language, please visit - [SnakeLadderGame-Java](https://github.com/yogo-chen/SnakeLadderGame-Java)
+
+### Usage
+We are using [Scala-SBT (Simple Build Tool)](http://www.scala-sbt.org/) as our build tool
+
+For SBT user, type this on your console
+```
+sbt run
+```
+If you don't have SBT, we also provide an executable [game.jar](https://github.com/yogo-chen/SnakeLadderGame-Scala/blob/master/game.jar) 
+
+Use this scala command on your console to run it
+```
+scala -classpath game.jar Main
+```
+Make sure you have a scala development kit before run it, grab one if you don't - [Download Scala](http://www.scala-lang.org/download/)
+
+### Documentation
+Documentations are available as Scala API Docs that provided on [api.zip](https://github.com/yogo-chen/SnakeLadderGame-Scala/blob/master/api.zip)
+
+### Credits
 - Prayogo Cendra
 - Melinda Nur Abianti
 - Kresna Dwi Chayo
 - Gabriela
 - Betari Ayu
 
-## License
+Thank you for all the time and effort you have put into this project to make it happen
+
+### License
 ```license
-Copyright 2015
+Copyright 2015 Prayogo Cendra
+Copyright 2015 Melinda Nur Abianti
+Copyright 2015 Kresna Dwi Chayo
+Copyright 2015 Gabriela
+Copyright 2015 Betari Ayu
 
 Licensed under the Apache License, Version 2.0 (the "License");
 you may not use this file except in compliance with the License.
