@@ -3,32 +3,32 @@ This project contain snake and ladder game on **[Scala](http://www.scala-lang.or
 
 <img src="http://codecondo.com/wp-content/uploads/2014/03/4-Minimal-Scala-Web-Frameworks-for-Web-Developers.gif" alt="Scala-Logo" height="200"/>
 
-- For **Java** language, please visit - [SnakeLadderGame-Java](https://github.com/yogo-chen/SnakeLadderGame-Java)
+- For **Java** language, please visit [SnakeLadderGame-Java](https://github.com/yogo-chen/SnakeLadderGame-Java)
 
 ## Usage
-We are using [Scala-SBT (Simple Build Tool)](http://www.scala-sbt.org/) as our build tool
+We are using [SBT (Scala Build Tool)](http://www.scala-sbt.org/) as our build tool
 
 For SBT user, type this on your console
 ```
 sbt run
 ```
-If you don't have SBT, we also provide an executable [game.jar](https://github.com/yogo-chen/SnakeLadderGame-Scala/blob/master/game.jar) 
+If you don't have SBT, we provide an executable [game.jar](https://github.com/yogo-chen/SnakeLadderGame-Scala/blob/master/game.jar) 
 
 Use this scala command on your console to run it
 ```
 scala -classpath game.jar Main
 ```
-Make sure you have a scala development kit before run it, grab one if you don't - [Download Scala](http://www.scala-lang.org/download/)
+Make sure you have Scala installed, grab one if you don't - [Download Scala](http://www.scala-lang.org/download/)
 
 ## Documentation
 Documentations are available as Scala API Docs that provided on [api.zip](https://github.com/yogo-chen/SnakeLadderGame-Scala/blob/master/api.zip)
 
 ## Credits
-- Prayogo Cendra
-- Melinda Nur Abianti
-- Kresna Dwi Chayo
-- Gabriela
-- Betari Ayu
+- Prayogo Cendra - [yogo-chen](https://github.com/yogo-chen)
+- Melinda Nur Abianti - [MelindaNurAbianti](https://github.com/MelindaNurAbianti)
+- Kresna Dwi Chayo - [Kresnadc](https://github.com/Kresnadc)
+- Gabriela - [Gabriella](https://github.com/gabriellavg)
+- Betari Ayu - [Betari](https://github.com/Betari)
 
 Thank you for all the time and effort you have put into this project to make it happen
 
