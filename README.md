@@ -5,7 +5,7 @@ This project contain snake and ladder game on **[Scala](http://www.scala-lang.or
 
 - For **Java** language, please visit - [SnakeLadderGame-Java](https://github.com/yogo-chen/SnakeLadderGame-Java)
 
-### Usage
+## Usage
 We are using [Scala-SBT (Simple Build Tool)](http://www.scala-sbt.org/) as our build tool
 
 For SBT user, type this on your console
@@ -20,10 +20,10 @@ scala -classpath game.jar Main
 ```
 Make sure you have a scala development kit before run it, grab one if you don't - [Download Scala](http://www.scala-lang.org/download/)
 
-### Documentation
+## Documentation
 Documentations are available as Scala API Docs that provided on [api.zip](https://github.com/yogo-chen/SnakeLadderGame-Scala/blob/master/api.zip)
 
-### Credits
+## Credits
 - Prayogo Cendra
 - Melinda Nur Abianti
 - Kresna Dwi Chayo
@@ -32,7 +32,7 @@ Documentations are available as Scala API Docs that provided on [api.zip](https:
 
 Thank you for all the time and effort you have put into this project to make it happen
 
-### License
+## License
 ```license
 Copyright 2015 Prayogo Cendra
 Copyright 2015 Melinda Nur Abianti
