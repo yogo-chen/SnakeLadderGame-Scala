@@ -2,9 +2,8 @@ package game.comp
 
 /**
  * Kelas Game yang merepresentasikan permainan Ular Tangga
- * Merupakan bagian dari kelas Model
  *
- * @Constructor pertama kelas Game
+ * @constructor membuat objek Game dimana terdapat 2 player yang mengontrol permainan
  * @param newp1 nama untuk pemain pertama 
  * @param newp2 nama untuk pemain kedua
  */
@@ -23,8 +22,8 @@ class Game(val newp1: String, val newp2: String) {
   private var finalPosition: Int = _
 
   /**
-   * Constructor kedua dari Kelas Game, yang merepresentasikan permainan melawan komputer
-   * @param newp1 nama pemain manusia
+   * membuat objek Game dimana terdapat 1 player dan 1 Computer/Bot yang mengontrol permainan
+   * @param newp1 nama player
    */
   def this(newp1: String) {
     this(newp1, "Bot")

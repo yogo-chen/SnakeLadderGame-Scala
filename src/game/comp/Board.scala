@@ -4,7 +4,7 @@ import scala.util.Random
 
 /**
  * Kelas Board yang merepresentaasikan papan dalam permainan SnakeLadder
- * merupakan bagian dari kelas model
+ * @constructor membuat objek Board / papan permainan
  */
 class Board {
   private var tiles: Array[Tile] = new Array[Tile](100) // kotak dalam 1 papan, terdiri dari 100 kotak

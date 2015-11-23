@@ -2,11 +2,8 @@ package game.comp
 
 /**
  * Kelas Player yang merepresentasikan pemain di dalam SnakeLadder
- * merupakan bagian dari kelas Model
- */
-
-/**
- * Constructor dari kelas Player
+ * 
+ * @constructor membuat objek Player
  * @param newname merupakan nama pemain
  */
 class Player(val newname: String) {

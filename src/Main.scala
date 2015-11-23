@@ -1,6 +1,7 @@
 import game.SnakeLadderTextMode
 /**
- * Kelas yang merepresentasikan Tester permainan Snake and Ladder
+ * Kelas Main yang memuat method main
+ * @constructor Main object
  */
 object Main {
   def main(args: Array[String]) {

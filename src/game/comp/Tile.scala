@@ -1,7 +1,7 @@
 package game.comp
 
 /**
- * Kelas Tile mempresentasikan kotak pada Board permainan
+ * Kelas abstrak Tile mempresentasikan kotak pada Board permainan
  * @constructor membuat sebuah tile baru dengan nomor posisi
  * @param newValue angka untuk menentukan nomor posisi
  */

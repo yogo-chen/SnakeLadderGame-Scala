@@ -4,7 +4,7 @@ import scala.util.Random
 
 /**
  * Kelas yang merepresentasikan dadu yang akan dikocok saat permainan
- * Merupakan bagian dari kelas Model
+ * @constructor membuat objek Dice / dadu
  */
 class Dice {
   private var r: Random = new Random()

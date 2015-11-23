@@ -3,11 +3,10 @@ package game.comp
 /**
  * Merepresentasikan Tile yang memiliki ular
  * merupakan subclass dari kelas Tile
- * merupakan bagian dari kelas model
  * 
- * @constructor menmbuat Tile Ular dengan posisi dan target
+ * @constructor membuat Tile Ular / tile ular
  * @param newValue merupakan posisi dari tileladder, dan newtarget merupakan tempat ladder dituju
  */
-class TileSnake(override val newValue: Int, val newtarget: Tile) extends Tile(newValue) {
+class TileSnake(override val newValue: Int, newtarget: Tile) extends Tile(newValue) {
   this.target = newtarget
 }
